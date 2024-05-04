@@ -40,8 +40,20 @@ public class Task9 {
 		default:
 			day = "Saturday";
 		}
+
+		System.out.println("1.Day = " + day);
 		
-		System.out.print("Day = " + day);
+		day = switch (i) {
+		case 1 -> "Sunday";
+		case 2 -> "Monday";
+		case 3 -> "Tuesday";
+		case 4 -> "Wednesday";
+		case 5 -> "Thursday";
+		case 6 -> "Friday";
+		default -> "Saturday";
+		};
+		
+		System.out.print("2.Day = " + day);
 		
 		
 
